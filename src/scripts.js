@@ -23,7 +23,7 @@ $(document).ready(function () {
       error: function () {
         alert("Erro ao confirmar presença. Tente novamente.");
       },
-      finally: function () {
+      complete: function () {
         submitButton.prop("disabled", false);
       },
     });
