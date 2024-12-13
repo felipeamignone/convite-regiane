@@ -5,10 +5,13 @@ $(document).ready(function () {
     const guests = $("#guests").val();
 
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbyfnMLex6pKAOQSkR5scVZ208oLapQota63XkKRAqFy9gzRIyTrRaRli0evMhM7aTqS/exec",
+      url: "https://script.google.com/macros/s/AKfycbwDsOvsXCRtz1WRnnCWws3bF0o4adM8BAp69EAO_3Earr-TM_KCY7nlZHwSdGygYqiV/exec",
       method: "POST",
-      contentType: "application/json",
       data: JSON.stringify({ name: name, guests: guests }),
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },
+      redirect: "follow",
       success: function () {
         $("#response").show();
         $("#rsvp-form")[0].reset();
