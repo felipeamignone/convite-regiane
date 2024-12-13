@@ -4,6 +4,10 @@ $(document).ready(function () {
     const name = $("#name").val();
     const guests = $("#guests").val();
 
+    const submitButton = $("#submit-button");
+
+    submitButton.prop("disabled", true);
+
     $.ajax({
       url: "https://script.google.com/macros/s/AKfycbwBHTmoE3-1V4xCY0BXTx6UiYNjBfT9UkQppE14Di4u7XFVtYfVY263t9pGpn5hfsgP/exec",
       method: "POST",
@@ -18,6 +22,9 @@ $(document).ready(function () {
       },
       error: function () {
         alert("Erro ao confirmar presença. Tente novamente.");
+      },
+      finally: function () {
+        submitButton.prop("disabled", false);
       },
     });
   });
