@@ -5,7 +5,7 @@ $(document).ready(function () {
     const guests = $("#guests").val();
 
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbwDsOvsXCRtz1WRnnCWws3bF0o4adM8BAp69EAO_3Earr-TM_KCY7nlZHwSdGygYqiV/exec",
+      url: "https://script.google.com/macros/s/AKfycbwBHTmoE3-1V4xCY0BXTx6UiYNjBfT9UkQppE14Di4u7XFVtYfVY263t9pGpn5hfsgP/exec",
       method: "POST",
       data: JSON.stringify({ name: name, guests: guests }),
       headers: {
