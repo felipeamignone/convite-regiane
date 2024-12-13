@@ -1,0 +1,91 @@
+body {
+  background-image: url("https://media-public.canva.com/M3Txk/MAF0DDM3Txk/1/s.jpg");
+}
+
+#bg-image-ballons {
+  position: absolute;
+  height: 50%;
+  width: auto;
+  top: -1%;
+  left: -3%;
+  z-index: -2;
+}
+
+#birthday-info {
+  backdrop-filter: blur(1px);
+}
+#birthday-banner {
+  height: 250px;
+}
+#birthday-number {
+  position: relative;
+  font-family: "Abril Fatface", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 127px;
+  line-height: normal;
+  color: #d18b8d;
+  letter-spacing: -0.052em;
+  text-shadow: 4px -4px black;
+}
+#birthday-text {
+  position: relative;
+  top: -50px;
+  font-family: "Allura", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0em;
+}
+#birthday-name {
+  position: relative;
+  top: -90px;
+  font-family: "Allura", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 85px;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0em;
+}
+.heart-divider {
+  width: 169px;
+}
+.birthday-invite-text {
+  font-family: "Noto Serif", serif;
+  line-height: 18px;
+  letter-spacing: 0.108em;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}
+#birthday-date {
+  background: radial-gradient(circle, #ff9a9e, #ff8286);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: "Noto Serif", serif;
+  line-height: 18px;
+  letter-spacing: 0.108em;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-weight: 700;
+  font-style: normal;
+  color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#birthday-location {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #ff8286 !important;
+  border-color: #ff8286 !important;
+}
+.btn-primary:hover {
+  background-color: #e67377 !important;
+  border-color: #e67377 !important;
+}
