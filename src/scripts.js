@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  document.querySelector(".balloons-container").style.animation =
+    "riseUp 5s ease-in-out forwards";
+
   $("#rsvp-form").on("submit", function (e) {
     e.preventDefault();
     const name = $("#name").val();

@@ -1,0 +1,48 @@
+.balloons-container {
+  position: fixed;
+  z-index: -2;
+  bottom: -200px; /* Posicionado fora da tela */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  animation: riseUp 5s ease-in-out forwards;
+}
+
+.balloon {
+  width: 100px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 3s ease-in-out infinite;
+}
+
+.balloon:nth-child(1) {
+  background-image: url("https://media-public.canva.com/CjdDs/MAF0DBCjdDs/1/s.png");
+  animation-delay: 0s;
+}
+.balloon:nth-child(2) {
+  background-image: url("https://media-public.canva.com/CjdDs/MAF0DBCjdDs/1/s.png");
+  animation-delay: 0.5s;
+}
+.balloon:nth-child(3) {
+  background-image: url("https://media-public.canva.com/CjdDs/MAF0DBCjdDs/1/s.png");
+  animation-delay: 1s;
+}
+
+@keyframes riseUp {
+  to {
+    bottom: 100%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
