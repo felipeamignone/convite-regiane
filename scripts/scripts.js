@@ -15,7 +15,7 @@ $(document).ready(function () {
     submitButton.prop("disabled", true);
 
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbwBHTmoE3-1V4xCY0BXTx6UiYNjBfT9UkQppE14Di4u7XFVtYfVY263t9pGpn5hfsgP/exec",
+      url: "https://script.google.com/macros/s/AKfycbyQGXu1T0BnnNRKC28YOYpVIKUFR-X2yultCVwzzfOpjOeNqif7xsphX-AySfzEjE82/exec",
       method: "POST",
       data: JSON.stringify({ name: name }),
       headers: {
