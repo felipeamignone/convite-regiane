@@ -2,10 +2,13 @@ $(document).ready(function () {
   document.querySelector(".balloons-container").style.animation =
     "riseUp 5s ease-in-out forwards";
 
+  $("#open-modal-button").on("click", function () {
+    $("#response").hide();
+  });
+
   $("#rsvp-form").on("submit", function (e) {
     e.preventDefault();
     const name = $("#name").val();
-    const guests = $("#guests").val();
 
     const submitButton = $("#submit-button");
 
@@ -14,7 +17,7 @@ $(document).ready(function () {
     $.ajax({
       url: "https://script.google.com/macros/s/AKfycbwBHTmoE3-1V4xCY0BXTx6UiYNjBfT9UkQppE14Di4u7XFVtYfVY263t9pGpn5hfsgP/exec",
       method: "POST",
-      data: JSON.stringify({ name: name, guests: guests }),
+      data: JSON.stringify({ name: name }),
       headers: {
         "Content-Type": "text/plain;charset=utf-8",
       },

@@ -1,0 +1,23 @@
+.modal-header,
+.modal-footer,
+.modal-body {
+  border: none;
+}
+
+.modal-title {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+.modal-content {
+  background-color: #fdd5d7;
+}
+
+#response {
+  display: none;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+}
