@@ -27,7 +27,7 @@ $(document).ready(function () {
     });
     $("#guests-text").append(
       `<p class="mb-1 mt-3">
-        Venha${namesList.length > 1 && 'm'} comemorar comigo <br />
+        Venha${namesList.length > 1 ? 'm' : ''} comemorar comigo <br />
         este dia especial
       </p>`
     );
