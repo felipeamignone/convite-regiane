@@ -10,7 +10,7 @@ $(document).ready(function () {
     get: (searchParams, prop) => searchParams.get(prop),
   });
 
-  let namesString = params.names;
+  let namesString = decodeURI(params.names);
   let namesList = [];
   if (namesString) {
     namesList = namesString.split(",");
