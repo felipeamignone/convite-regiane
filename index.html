@@ -44,12 +44,14 @@
           alt="Divider With Heart Hand Drawn Element"
           class="heart-divider my-4"
         />
-        <span class="birthday-invite-text"
-          >Venha comemorar comigo <br />
-          este dia especial
-        </span>
-        <div id="birthday-date" class="text-center my-3">XX de fevereiro</div>
-        <span class="birthday-invite-text">Às XX:YY horas</span>
+        <span class="birthday-invite-text" id="guests-text"></span>
+        <img
+          src="./images/heartDivider.svg"
+          alt="Divider With Heart Hand Drawn Element"
+          class="heart-divider my-4"
+        />
+        <div id="birthday-date" class="text-center my-3">15 de fevereiro</div>
+        <span class="birthday-invite-text">Às 19:30 horas</span>
         <a
           href="https://maps.app.goo.gl/qcxwgAevbApor1DK7"
           id="birthday-location"
@@ -90,15 +92,9 @@
               aria-label="Close"
             ></button>
           </div>
-          <form id="rsvp-form">
+          <form id="guest-form">
             <div class="modal-body">
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="Digite seu nome"
-                required
-              />
+              <div id="guest-list"></div>
               <div class="text-center">
                 <span id="response">
                   Presença confirmada! <br />
